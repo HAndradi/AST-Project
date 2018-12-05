@@ -10,7 +10,7 @@ class TupleList:
 
 class Object:
     def __init__(self, name, number, confidence):
-        self.name = name
+        self.name = name.lower()
         self.number = number
         self.confidence = confidence
 
