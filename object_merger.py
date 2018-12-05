@@ -29,7 +29,7 @@ class ObjectListMerger:
             while len(sensor)>0:
                 sensor_reading = sensor.pop()
                 reading_parameters = [sensor_reading.name, sensor_reading.number, sensor_reading.confidence]
-                for remaining_sensor in self.sensors_object_list[sensor_num + 1:]:
+                for remaining_sensor in self.sensors_object_list[sensor_num:]:
                     for remaining_sensor_reading in remaining_sensor:
                         if reading_parameters[1] == remaining_sensor_reading.number:
                             if remaining_sensor_reading.confidence > reading_parameters[2]:
