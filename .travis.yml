@@ -1,8 +1,5 @@
 language: python
 python:
   - 3.5
-cache: pip
-install:
-  - pip3 install -r requirements.txt
 script:
-  - python3 object_merger_test.py
+  - python -m unittest
