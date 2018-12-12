@@ -3,6 +3,6 @@ python:
   - 3.5
 cache: pip
 install:
-  - pip install -r requirements.txt
+  - pip3 install -r requirements.txt
 script:
-  - python object_merger_test.py
+  - python3 object_merger_test.py
