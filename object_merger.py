@@ -56,4 +56,4 @@ class ObjectListMerger:
     def combined_tuple_list(self):
         merged_object_list = self.merge_objects(MergingAlgorithm())
         tuple_list = ListHandler().object_list_to_tuple_list(merged_object_list)
-return tuple_list
+        return tuple_list

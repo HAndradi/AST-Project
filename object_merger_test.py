@@ -69,7 +69,6 @@ class TestStringMethods(unittest.TestCase):
 
         expected = [('knife',1, 99), ('fork', 3, 99)]
         actual = ObjectListMerger(sensor_1,sensor_2).combined_tuple_list()
-        print(actual)
         self.assertEqual(len(actual), len(expected))
         for i in actual:
             self.assertIn(i,expected)

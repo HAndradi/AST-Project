@@ -4,4 +4,4 @@
 2. Coding Standard: PEP 8<br>
 3. Testing Framework: Unit Test<br>
 4. Data Structure: Lists of Objects<br>
-5. Input & Output formats: Lists of Tuples<br>
+5. Input & Output formats: Lists of Tuples where each object consists of name(type string), number(type int), confidence(type int)<br>
