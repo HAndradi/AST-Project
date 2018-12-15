@@ -1,4 +1,4 @@
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Python 3.5](https://img.shields.io/badge/python-3.5-blue.svg)](https://www.python.org/downloads/release/python-350/) [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Python 3.5](https://img.shields.io/badge/python-3.5-red.svg)](https://www.python.org/downloads/release/python-350/) [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/) [![unittest](https://img.shields.io/badge/code%20 framework-unittest-lightgrey.svg)](https://docs.python.org/3/library/unittest.html)
 
 |**Service**|**Master**|**Devel**|
 |:------------- |:------------- |:----- |
@@ -59,15 +59,4 @@ Add additional notes about how to deploy this on a live system
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Old Readme content
-
-1. Programming Language: Python3<br>
-2. Coding Standard: PEP 8<br>
-3. Testing Framework: Unit Test<br>
-4. Data Structure: Lists of Objects<br>
-5. Input & Output formats: Lists of Tuples where each object consists of name(type string), number(type int), confidence(type int)<br>
-
-
-
+This project is licensed under the GNU General Public License v3.0
