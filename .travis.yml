@@ -1,7 +1,8 @@
 language: python
 
 python:
-  - "stable"
+  - 2.7
+  - 3.7
   
 script:
   - python -m unittest
