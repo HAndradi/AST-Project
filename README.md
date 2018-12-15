@@ -1,3 +1,9 @@
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Python 3.5](https://img.shields.io/badge/python-3.5-blue.svg)](https://www.python.org/downloads/release/python-350/) [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
+|**Service**|**Master**|**Devel**|
+|:------------- |:------------- |:----- |
+|CI status|[![Build Status](https://travis-ci.com/hkhbrus/AST-Project.svg?branch=master)](https://travis-ci.com/hkhbrus/AST-Project)|[![Build Status](https://travis-ci.com/hkhbrus/AST-Project.svg?branch=devel)](https://travis-ci.com/hkhbrus/AST-Project)|
+|Test Coverage|[![codecov](https://codecov.io/gh/hkhbrus/AST-Project/branch/master/graph/badge.svg)](https://codecov.io/gh/hkhbrus/AST-Project)|[![codecov](https://codecov.io/gh/hkhbrus/AST-Project/branch/devel/graph/badge.svg)](https://codecov.io/gh/hkhbrus/AST-Project)|
+
 # Object List Merger
 
 One Paragraph of project description goes here
@@ -63,9 +69,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 5. Input & Output formats: Lists of Tuples where each object consists of name(type string), number(type int), confidence(type int)<br>
 
 
-|**Service**|**Master**|**Devel**|
-|:------------- |:------------- |:----- |
-|CI status|[![Build Status](https://travis-ci.com/hkhbrus/AST-Project.svg?branch=master)](https://travis-ci.com/hkhbrus/AST-Project)|[![Build Status](https://travis-ci.com/hkhbrus/AST-Project.svg?branch=devel)](https://travis-ci.com/hkhbrus/AST-Project)|
-|Test Coverage|[![codecov](https://codecov.io/gh/hkhbrus/AST-Project/branch/master/graph/badge.svg)](https://codecov.io/gh/hkhbrus/AST-Project)|[![codecov](https://codecov.io/gh/hkhbrus/AST-Project/branch/devel/graph/badge.svg)](https://codecov.io/gh/hkhbrus/AST-Project)|
-|Test Report|   |   |
-|Documentation|   |   |
+
