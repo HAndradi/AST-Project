@@ -63,15 +63,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 5. Input & Output formats: Lists of Tuples where each object consists of name(type string), number(type int), confidence(type int)<br>
 
 
-+ **Continuous Integration** - [![Build Status](https://travis-ci.com/hkhbrus/AST-Project.svg?branch=master)](https://travis-ci.com/hkhbrus/AST-Project) - "*build passing*" indicates that the project's **tests** all **pass** as expected.
-
-+ **Test/Code Coverage** - [![codecov.io Code Coverage](https://img.shields.io/codecov/c/github/1apple7seeds/AST-Project.svg?maxAge=2592000)](https://codecov.io/github/1apple7seeds/AST-Project) - coverage is the measure of how much of the code in a project is tested. Anything ***below 100% coverage*** means the module/library has ***potential bugs*** which are unknown to the authors/users.
-
-**Master** - [![Build Status](https://travis-ci.com/hkhbrus/AST-Project.svg?branch=master)](https://travis-ci.com/hkhbrus/AST-Project)
-**Devel** - [![Build Status](https://travis-ci.com/hkhbrus/AST-Project.svg?branch=devel)](https://travis-ci.com/hkhbrus/AST-Project)
-
-**codecov** - [![codecov](https://codecov.io/gh/hkhbrus/AST-Project/branch/master/graph/badge.svg)](https://codecov.io/gh/hkhbrus/AST-Project)
-
 |**Service**|**Master**|**Devel**|
 |:------------- |:------------- |:----- |
 |CI status|[![Build Status](https://travis-ci.com/hkhbrus/AST-Project.svg?branch=master)](https://travis-ci.com/hkhbrus/AST-Project)|[![Build Status](https://travis-ci.com/hkhbrus/AST-Project.svg?branch=devel)](https://travis-ci.com/hkhbrus/AST-Project)|
