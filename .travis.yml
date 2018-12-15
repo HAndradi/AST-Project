@@ -1,0 +1,17 @@
+language: python
+
+python:
+  - 2.7
+  - 3.5
+  
+script:
+  - python -m unittest
+  
+install:
+  - pip install codecov
+
+script:
+  - coverage run object_merger_test.py
+
+after_success:
+- codecov
