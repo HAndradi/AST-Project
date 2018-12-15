@@ -1,6 +1,11 @@
 import unittest
 from object_merger import *
 
+class ListMethods:
+    def assert_equals(self, unittest_obj, actual, expected):
+        for item in actual:
+            unittest_obj.assertIn(item,expected)
+
 class TestStringMethods(unittest.TestCase):
 
     def test1_object_merger(self):
@@ -10,8 +15,7 @@ class TestStringMethods(unittest.TestCase):
         expected = [('knife',1, 99), ('scissor', 2, 95), ('fork', 3, 99), ('spoon', 4, 99), ('keys', 5, 95)]
         actual = ObjectListMerger(sensor_1,sensor_2).combined_tuple_list()
         self.assertEqual(len(actual), len(expected))
-        for i in actual:
-            self.assertIn(i,expected)
+        ListMethods().assert_equals(self, actual, expected)
 
     def test2_object_merger(self):
         sensor_1 = [('knife',1, 99), ('scissor', 2, 65), ('spoon', 3, 33), ('spoon', 4, 80), ('keys', 5, 95)]
@@ -20,8 +24,7 @@ class TestStringMethods(unittest.TestCase):
         expected = [('knife',1, 99), ('scissor', 2, 95), ('fork', 3, 99), ('spoon', 4, 99), ('keys', 5, 95)]
         actual = ObjectListMerger(sensor_1,sensor_2).combined_tuple_list()
         self.assertEqual(len(actual), len(expected))
-        for i in actual:
-            self.assertIn(i,expected)
+        ListMethods().assert_equals(self, actual, expected)
 
     def test3_object_merger(self):
         sensor_1 = []
@@ -30,8 +33,7 @@ class TestStringMethods(unittest.TestCase):
         expected = []
         actual = ObjectListMerger(sensor_1,sensor_2).combined_tuple_list()
         self.assertEqual(len(actual), len(expected))
-        for i in actual:
-            self.assertIn(i,expected)
+        ListMethods().assert_equals(self, actual, expected)
 
     def test4_object_merger(self):
         sensor_1 = [('knife',1, 99), ('scissor', 2, 65), ('spoon', 3, 33)]
@@ -40,8 +42,7 @@ class TestStringMethods(unittest.TestCase):
         expected = [('knife',1, 99), ('scissor', 2, 65), ('spoon', 3, 33)]
         actual = ObjectListMerger(sensor_1,sensor_2).combined_tuple_list()
         self.assertEqual(len(actual), len(expected))
-        for i in actual:
-            self.assertIn(i,expected)
+        ListMethods().assert_equals(self, actual, expected)
 
     def test5_object_merger(self):
         sensor_1 = [('knife',1, 99), ('scissor', 2, 65), ('spoon', 3, 33)]
@@ -50,8 +51,7 @@ class TestStringMethods(unittest.TestCase):
         expected = [('knife',1, 99), ('scissor', 2, 65), ('spoon', 3, 33)]
         actual = ObjectListMerger(sensor_1,sensor_2).combined_tuple_list()
         self.assertEqual(len(actual), len(expected))
-        for i in actual:
-            self.assertIn(i,expected)
+        ListMethods().assert_equals(self, actual, expected)
 
     def test6_object_merger(self):
         sensor_1 = [('knife',1, 99), ('scissor', 2, 65)]
@@ -60,8 +60,7 @@ class TestStringMethods(unittest.TestCase):
         expected = [('knife',1, 99), ('scissor', 2, 65), ('fork', 3, 99), ('spoon', 4, 99)]
         actual = ObjectListMerger(sensor_1,sensor_2).combined_tuple_list()
         self.assertEqual(len(actual), len(expected))
-        for i in actual:
-            self.assertIn(i,expected)
+        ListMethods().assert_equals(self, actual, expected)
 
     def test7_object_merger(self):
         sensor_1 = [('knife',1, 94),('knife',1, 69),('knife',1, 89)]
@@ -70,8 +69,7 @@ class TestStringMethods(unittest.TestCase):
         expected = [('knife',1, 99), ('fork', 3, 99)]
         actual = ObjectListMerger(sensor_1,sensor_2).combined_tuple_list()
         self.assertEqual(len(actual), len(expected))
-        for i in actual:
-            self.assertIn(i,expected)
+        ListMethods().assert_equals(self, actual, expected)
 
     def test8_object_merger(self):
         sensor_1 = [('knife',1, 89)]
@@ -82,8 +80,7 @@ class TestStringMethods(unittest.TestCase):
         expected = [('knife',1, 89)]
         actual = ObjectListMerger(sensor_1,sensor_2,sensor_3,sensor_4).combined_tuple_list()
         self.assertEqual(len(actual), len(expected))
-        for i in actual:
-            self.assertIn(i,expected)
+        ListMethods().assert_equals(self, actual, expected)
 
 if __name__ == '__main__':
     unittest.main()
