@@ -69,3 +69,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 **Master** - [![Build Status](https://travis-ci.com/hkhbrus/AST-Project.svg?branch=master)](https://travis-ci.com/hkhbrus/AST-Project)
 **Devel** - [![Build Status](https://travis-ci.com/hkhbrus/AST-Project.svg?branch=devel)](https://travis-ci.com/hkhbrus/AST-Project)
+
+**codecov** - [![codecov](https://codecov.io/gh/hkhbrus/AST-Project/branch/master/graph/badge.svg)](https://codecov.io/gh/hkhbrus/AST-Project)
