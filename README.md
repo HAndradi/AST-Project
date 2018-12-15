@@ -71,3 +71,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 **Devel** - [![Build Status](https://travis-ci.com/hkhbrus/AST-Project.svg?branch=devel)](https://travis-ci.com/hkhbrus/AST-Project)
 
 **codecov** - [![codecov](https://codecov.io/gh/hkhbrus/AST-Project/branch/master/graph/badge.svg)](https://codecov.io/gh/hkhbrus/AST-Project)
+
+|**Service**|**Master**|**Devel**|
+|CI status|[![Build Status](https://travis-ci.com/hkhbrus/AST-Project.svg?branch=master)](https://travis-ci.com/hkhbrus/AST-Project)|[![Build Status](https://travis-ci.com/hkhbrus/AST-Project.svg?branch=devel)](https://travis-ci.com/hkhbrus/AST-Project)|
+|Test Coverage|[![codecov](https://codecov.io/gh/hkhbrus/AST-Project/branch/master/graph/badge.svg)](https://codecov.io/gh/hkhbrus/AST-Project)|[![codecov](https://codecov.io/gh/hkhbrus/AST-Project/branch/devel/graph/badge.svg)](https://codecov.io/gh/hkhbrus/AST-Project)|
+|Test Report|   |   |
+|Documentation|   |   |
