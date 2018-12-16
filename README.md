@@ -28,7 +28,7 @@ On the terminal, run the following command to clone the repository
 ```
 git clone https://github.com/hkhbrus/AST-Project.git
 ```
-Execute the following command on the terminal to run the "object_merger_sample.py" file. If everything is in order, the code should run without any errors.
+Execute the following command on the terminal to run the [object_merger_sample.py](object_merger_sample.py) file. If everything is in order, the code should run without any errors.
 ```
 python3 object_merger_sample.py
 ```
@@ -42,9 +42,22 @@ python3 object_merger_test.py
 
 ### Break down into end to end tests
 
-All of the testcases (Sensor input and expected output) can be found tabulated in the [testcases.csv](testcases.csv) file.
+All of the testcases (Sensor input and the corresponding expected outputs) can be found tabulated in the [testcases.csv](testcases.csv) file.
 
 ## Deployment
+
+The ["object_merger.py"](object_merger.py) file contains all the classes required to carry out an object list merger. The classes in the "object_merger.py" file can be imported from another python script in the same directory using the following line of code.
+```
+from object_merger import *
+```
+The code below provides an example of how the classes and methods in the "object_merger.py" file could be used carry out an object list merger on two sensor inputs. The input must be provided in the form of a tuple list, where each tuple represents an object and consists of the object's name(type string), number(type int), confidence(type int). An "ObjectListMerger" object could be created with the tuple lists from the sensors provided as the input parameters. The "combined_tuple_list" method could then be call on the "ObjectListMerger" object to return the merged object list as a list of tuples.
+```
+sensor_1 = [('knife',1, 99), ('scissor', 2, 65), ('spoon', 3, 33), ('spoon', 4, 80), ('keys', 5, 95)]
+sensor_2 = [('knife',1, 55), ('scissor', 2, 95), ('fork', 3, 99), ('spoon', 4, 99), ('keys', 5, 95) ]
+actual = ObjectListMerger(sensor_1,sensor_2).combined_tuple_list()
+print ('Input sensor readings:\n' , sensor_1 , '\n' , sensor_2)
+print ('Obtained merged result:\n' , actual, '\n')
+```
 
 ## Authors
 
