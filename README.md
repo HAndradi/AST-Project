@@ -7,7 +7,7 @@
 
 # Object List Merger
 
-One Paragraph of project description goes here
+The project involves the development of a program to merge input from mutiple sensors. To be more specific, each sensor is expected to provide a tuple list of the objects it perceives, where each tuple holds the object's name, id, and the confidence percentage with which the name of the object was determined. The objective is to merge these lists into a single list of all of the unique objects (based on the object ids) that were perceived, along with the most likely name of the object and the confidence with which the object is classified.
 
 ## Getting Started
 
@@ -20,37 +20,31 @@ Numpy
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
+Run the following command on the terminal to install Git on a Linux (Ubuntu/Debian) system.
 ```
-Give the example
+sudo apt-get install git
 ```
-
-And repeat
-
+On the terminal, run the following command to clone the repository
 ```
-until finished
+git clone https://github.com/hkhbrus/AST-Project.git
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
+Execute the following command on the terminal to run the "object_merger_sample.py" file. If everything is in order, the code should run without any errors.
+```
+python3 object_merger_sample.py
+```
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+The automated tests will be run by Travis CI whenever a new commit is made to the main GitHub repository. On a local repository, the following command can run on a terminal inside the repository to execute all the test cases.
+```
+python3 object_merger_test.py
+```
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
-
-```
-Give an example
-```
+All of the testcases (Sensor input and expected output) can be found tabulated in the [testcases.csv](testcases.csv) file.
 
 ## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Authors
 
