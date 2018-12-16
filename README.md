@@ -58,6 +58,14 @@ actual = ObjectListMerger(sensor_1,sensor_2).combined_tuple_list()
 print ('Input sensor readings:\n' , sensor_1 , '\n' , sensor_2)
 print ('Obtained merged result:\n' , actual, '\n')
 ```
+Output:
+```
+Input sensor readings:
+ [('knife', 1, 99), ('scissor', 2, 65), ('spoon', 3, 33), ('spoon', 4, 80), ('keys', 5, 95)] 
+ [('knife', 1, 55), ('scissor', 2, 95), ('fork', 3, 99), ('spoon', 4, 99), ('keys', 5, 95)]
+Obtained merged result:
+ [('keys', 5, 95), ('spoon', 4, 99), ('fork', 3, 99), ('scissor', 2, 95), ('knife', 1, 99)] 
+```
 
 ## Authors
 
